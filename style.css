@@ -12,20 +12,67 @@ body{
     background-color: #f6f7fb;
     font-family: 'Muli', sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     overflow: hidden;
     margin: 0;
 }
 
+header {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 0;
+    background-color: var(--line-border-fill);
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+}
+
+#logo {
+    display: flex;
+    margin-right: 20px;
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar {
+    background-color: var(--line-border-fill);
+}
+
+.navbar-brand {
+    background-color: var(--line-border-fill);
+    display: flexbox;
+    align-items: top;
+    justify-content: right;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 20px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+}
+
+
 .container{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .progress-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     margin-bottom: 30px;
     max-width: 100%;
@@ -75,9 +122,12 @@ body{
 }
 
 .btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     background-color: var(--line-border-fill);
     color: #ffff;
-    border: 0;
+    border: 10;
     border-radius: 6px;
     cursor: pointer;
     font-family: inherit;
